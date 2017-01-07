@@ -1,5 +1,5 @@
 
-var backColor=new Array('#ED1C24','#F15A24','#F7931E','#FBB03B','#FCEE21','#8CC63F','#009245','#0071BC','#2E3192','#5F0F8A','#8D0F82','#CF0072');
+var myColor=new Array('#ED1C24','#F15A24','#F7931E','#FBB03B','#FCEE21','#8CC63F','#009245','#0071BC','#2E3192','#5F0F8A','#8D0F82','#CF0072');
 	//var oBtn=document.getElementById('btn');
 var txtArray=new Array(
 			'你我本无缘\n全靠我死撑',
@@ -19,24 +19,27 @@ toShow.onclick=function(){
 	var content=document.getElementById('content');
 	var txt=document.getElementById('txt');
 	var sina=document.getElementsByTagName('a');
-	//var sina=document.getElementById('a1');
-	sina[0].style.top=50+'%';
 
 	//设置html背景和文字颜色
 	var randomNum=Math.floor(12*Math.random());
-	oContainer.style.background=backColor[randomNum];
-	txt.style.color=backColor[randomNum];
+	oContainer.style.background=myColor[randomNum];
+	txt.style.color=myColor[randomNum];
+	
+
 	//设置文本的背景颜色
 	if(randomNum<6){
-		content.style.background=backColor[randomNum+6];
+		content.style.background=myColor[randomNum + 6];
+		sina[0].style.color=myColor[randomNum + 6];
 	}
 	else{
-		content.style.background=backColor[randomNum-6];
+		content.style.background=myColor[randomNum - 6];
+		sina[0].style.color=myColor[randomNum - 6];
 	}
 	//设置文本位置
 	randomNum=Math.floor(8*Math.random());
 	content.style.top=txtPosition[randomNum][0]*33.333+'%';
 	content.style.left=txtPosition[randomNum][1]*33.333+'%';
+
 	//设置文本内容
 	randomNum=Math.floor(8*Math.random());
 	txt.innerText=txtArray[randomNum];
