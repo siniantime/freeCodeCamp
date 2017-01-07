@@ -1,47 +1,45 @@
-html,body,div,p,button{
-	margin:0;
-	padding:0;
-}
+html,body,div,p,img,i,a{margin: 0;padding:0;}
 html,body{
-	width:100%;
-	height: 100%;	
+	width: 100%;
+	height: 100%;
 }
-#container{
-	font-size: 2em;
+.container{
+	position: relative;
+	height: 100%;
 	font-family: 'Microsoft YaHei';
-	height:100%;
 }
-#textBox{
+.content{
 	position:absolute;
-	height:33.333%;
-	width:33.333%;	
-	z-index:1;
+	width: 33.333%;
+	height: 33.333%;
 	text-align: center;
 }
-i,#text{
+.txtBox,.content i{
 	display: inline-block;
-	vertical-align:middle;
+	vertical-align: middle;
 	*display: inline;
-	*zoom: 1;
+	*zoom:1;
 }
-i{
-	height: 100%;
+.content i{
 	width: 0;
+	height: 100%;
 }
+.content p{
+	font-size: 1.2em;
 }
-#text{
-	z-index:2;	
-}
-#btn{
+.showBox{
+	position: absolute;
 	margin: auto;
-	left: 0;
-	right: 0;
 	top:0;
+	right: 0;
 	bottom: 0;
-	font-size: 1em;
-	width: 33.333%;
-	height: 10%;
-	position:absolute;
-	z-index:2;
+	left: 0;
+	width:33.333%;
+	height: 33.333%;
+	font-size: 1.5em;
+	text-align: center;
 }
-
+a{
+	color: green;
+	position: absolute;
+}
