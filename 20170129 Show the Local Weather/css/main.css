@@ -1,0 +1,68 @@
+/*公共样式*/
+p,ul,li{
+	margin: 0px;
+	padding: 0px;
+}
+body{
+	font-family: "Microsoft Yahei";
+	font-size: 18px;
+}
+/*样式*/
+.container{
+	width: 300px;
+	height: 500px;
+	margin: auto;
+	border: 2px solid #ccc;
+}
+.today{
+	position: relative;
+	height: 300px;
+	color: #fff;
+	background-color: #009245;
+}
+.today .location{
+	height: 30px;
+	margin-left: 10px;
+	line-height: 30px;
+}
+.today .location button{
+	width: 75px;
+}
+.today .weather{
+	height: 100px;
+	margin: 70px 0px 30px 0px;
+}
+.today img{
+	display: block;
+	margin: auto;
+	height: 80px;
+}
+.today .weather p{
+	height: 30px;
+	margin-top: 10px;
+	font-size: 24px;
+	line-height: 30px;
+	text-align: center;
+}
+.today .date{
+	padding-top: 20px;
+	padding-left: 10px;
+	float: left;
+}
+.today .week{
+	padding-top: 20px;
+	padding-right: 10px;
+	float: right;
+}
+
+.future{
+	padding-top: 20px;
+}
+.future li{
+	width: 33.33%;
+	padding-top: 15px;
+	float: left;
+	text-align: center;
+	line-height: 34px;
+	list-style: none;
+}
